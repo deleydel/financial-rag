@@ -170,6 +170,5 @@ The corpus window can be changed by modifying `START_YEAR` in `config.py`.
 
 - `all-MiniLM-L6-v2` performs well for lightweight semantic retrieval but is less effective for dense numerical tables.
 
-- The current pipeline relies on dense vector retrieval. Future work could investigate hybrid lexical-semantic retrieval, table-aware embedding models, reranking, and tool-assisted numerical computation for improved performance on complex financial questions.
 
 ---
