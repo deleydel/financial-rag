@@ -8,6 +8,8 @@ retriever and the generator.
 
 ## Results (K = 5, 40 questions, corpus 2010–2025)
 
+The evaluation was conducted on a filtered OfficeQA subset covering Treasury Bulletins from 2010–2025 (40 evaluation questions). Retrieval metrics were computed using K = 5.
+
 | Metric | Baseline | Engineered |
 |---|---|---|
 | Hit Rate@5 | 22.5% | **52.5%** |
@@ -53,7 +55,7 @@ outputs/             # questions.jsonl, chunks_*.jsonl, chroma/, results.csv, sc
 pip install chromadb sentence-transformers anthropic tiktoken pandas
 export ANTHROPIC_API_KEY="sk-ant-..."
 
-python3 phase1_process.py            # build the eval set + tagged chunks
+phase1_process.py    		     # data filtering, preprocessing, chunking, metadata tagging
 python3 rag.py build baseline        # embed + index (local, cached)
 python3 rag.py build engineered
 python3 phase4_evaluate.py           # full scorecard (cached; safe to re-run)
@@ -62,13 +64,9 @@ python3 phase4_evaluate.py           # full scorecard (cached; safe to re-run)
 Change the corpus window in one line (`START_YEAR` in `config.py`).
 
 ## Key findings
-- The **retriever is the bottleneck**: high groundedness / low hallucination but
-  near-zero accuracy means the model reads faithfully; the search hands it the
-  wrong pages.
-- **Metadata + structure-aware chunking more than doubled retrieval** (Hit@5,
-  MRR, Recall@5) — the biggest single win.
-- Absolute accuracy is low because these OfficeQA questions require aggregating
-  many values across bulletins for advanced statistics; it is retrieval-bound.
+- The engineered pipeline substantially improved retrieval performance, increasing Hit Rate@5 from 22.5% to 52.5% while reducing hallucination from 28.1% to 6.7%.
+- Metadata-aware retrieval and structure-aware chunking produced the largest improvements in retrieval quality.
+- Despite these improvements, factual accuracy remained low because many evaluation questions required multi-step statistical reasoning and aggregation across multiple Treasury Bulletins, highlighting retrieval coverage as the primary remaining limitation.
 
 ## Notes / limitations
 - MiniLM is a sentence embedder and is weak on dense numeric tables — a
