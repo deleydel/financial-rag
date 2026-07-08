@@ -1,0 +1,13 @@
+# large / regenerable artifacts
+outputs/chroma/
+outputs/emb_cache/
+outputs/cache/
+outputs/chunks_baseline.jsonl
+outputs/chunks_engineered.jsonl
+
+# python
+__pycache__/
+*.pyc
+.env
+
+# keep: questions.jsonl, results.csv, scorecard.md (small, useful evidence)

@@ -1,0 +1,81 @@
+preset,uid,difficulty,hit,rr,recall,correct,supported,claims,answer
+baseline,UID0008,easy,0,0.0,0.0,0,0,0,
+baseline,UID0009,hard,0,0.0,0.0,0,0,0,
+baseline,UID0010,hard,0,0.0,0.0,0,2,5,"I don't have sufficient information in the provided Treasury Bulletin excerpts to answer this question. The excerpts contain data on Foreign Currency Positions (weekly and monthly reports of major/large market participants' spot, forward, and futures contracts in yen), but none of them show U.S. Tre"
+baseline,UID0019,hard,0,0.0,0.0,0,0,0,
+baseline,UID0036,hard,0,0.0,0.0,0,4,6,"I don't have enough information from the provided Treasury Bulletin excerpts to answer this question.  The excerpts provided contain data on: - Interest rate spreads (TED spread, Baa-Treasury spread) - Mortgage rates - Foreign exchange rates - U.S. banking liabilities and claims by country/region (t"
+baseline,UID0042,hard,0,0.0,0.0,0,0,0,
+baseline,UID0054,easy,0,0.0,0.0,0,5,5,"Looking through all the provided Treasury Bulletin excerpts, I need to find Euro (Section VI) weekly net options position data covering the period surrounding March 11, 2020 (when WHO declared COVID-19 a pandemic) — specifically the 5 weeks before and 5 weeks after that date.  However, none of the p"
+baseline,UID0066,easy,0,0.0,0.0,0,0,0,
+baseline,UID0068,hard,0,0.0,0.0,0,0,0,"I don't have information about OCS (Outer Continental Shelf) rents and royalties data for 2016 in the provided Treasury Bulletin excerpts. The documents contain data on financial derivatives contracts, currency circulation, public debt operations, and Treasury financing auctions, but none contain da"
+baseline,UID0072,easy,0,0.0,0.0,0,0,0,
+baseline,UID0077,hard,1,1.0,0.5,0,0,0,
+baseline,UID0078,easy,1,0.333,0.333,0,0,0,
+baseline,UID0079,easy,0,0.0,0.0,0,0,0,
+baseline,UID0081,easy,0,0.0,0.0,0,0,0,
+baseline,UID0082,easy,1,0.25,0.5,0,0,0,
+baseline,UID0085,hard,0,0.0,0.0,0,2,4,"Looking through the provided Treasury Bulletin excerpts, I can only find state-by-state Internal Revenue Receipts data for **2010** (in treasury_bulletin_2010_12.txt, Table FFO-5). None of the excerpts contain the state-level breakdown of Internal Revenue Receipts for **CY2018** or **CY2019**, which"
+baseline,UID0086,hard,0,0.0,0.0,0,3,3,"Based on the provided Treasury Bulletin excerpts, none of the documents contain TABLE ESF-1 balance sheet data for June 30, 2022, or September 30, 2022. The excerpts include ESF-1 data for other periods (e.g., 2010, 2013, 2014, 2015, 2016, 2020, 2024, 2025), but no file corresponds to the June–Septe"
+baseline,UID0087,easy,0,0.0,0.0,0,0,0,
+baseline,UID0088,easy,0,0.0,0.0,0,13,13,# Solving for the 10% Winsorized Range of NASA Outlays (FY2008-2017)  ## Step 1: Extract NASA Outlay Values (Column 25) for FY2008-2017  | Fiscal Year | NASA Outlays (millions) | |---|---| | 2008 | 17834 | | 2009 | 19168 | | 2010 | 18906 | | 2011 | 17617 | | 2012 | 17190 | | 2013 | 16978 | | 2014 | 
+baseline,UID0089,easy,1,0.2,0.333,0,9,9,"# Solution  ## Step 1: Extract Department of Energy (7) outlays for FY 2012-2019  From the tables (values in millions of dollars): - 2012: 32,485 - 2013: 24,677 - 2014: 23,630 - 2015: 25,425 - 2016: 25,852 - 2017: 25,794 - 2018: 26,479 - 2019: 28,936  ## Step 2: Extract Department of Agriculture (3)"
+baseline,UID0098,easy,0,0.0,0.0,0,0,0,
+baseline,UID0099,easy,0,0.0,0.0,0,0,0,
+baseline,UID0100,hard,0,0.0,0.0,0,0,0,
+baseline,UID0101,hard,0,0.0,0.0,0,3,4,"Looking through all the provided Treasury Bulletin excerpts, I need to locate the U.S. Department of Labor's total outlays (including both budgetary and trust-fund flows) for FY 2011 and FY 2019.  **Searching the data:**  The tables provided (FFO-1, FFO-2, FFO-3, FFO-4) show outlays broken down by: "
+baseline,UID0102,hard,1,0.333,0.25,0,0,0,
+baseline,UID0108,hard,0,0.0,0.0,0,0,0,"Looking through all the provided Treasury Bulletin excerpts, I need to find monthly excise tax receipt data specifically for Fiscal Year 2018 (October 2017 – September 2018) in order to calculate the Mean Absolute Deviation.  Searching the excerpts: - Quar"
+baseline,UID0109,hard,0,0.0,0.0,0,0,0,
+baseline,UID0110,hard,0,0.0,0.0,0,0,0,
+baseline,UID0111,hard,0,0.0,0.0,0,0,0,
+baseline,UID0125,easy,1,1.0,0.333,0,0,0,
+baseline,UID0155,hard,0,0.0,0.0,0,0,0,
+baseline,UID0162,easy,0,0.0,0.0,0,0,0,
+baseline,UID0165,hard,0,0.0,0.0,0,0,0,"I need data on U.S. Treasury securities ownership by mutual funds for end of March 2000-2004, which is not present in these excerpts.  The provided Treasury Bulletin excerpts do not contain the required table of ""estimated U.S. Treasury securities ownership by mutual funds"" for the years 2000-2004, "
+baseline,UID0178,easy,0,0.0,0.0,0,0,0,
+baseline,UID0180,hard,0,0.0,0.0,0,0,0,
+baseline,UID0182,hard,0,0.0,0.0,0,0,0,
+baseline,UID0204,hard,1,0.2,0.5,0,0,0,
+baseline,UID0206,easy,0,0.0,0.0,0,0,0,
+baseline,UID0219,hard,1,0.333,1.0,0,0,0,I don't have sufficient data in the provided excerpts to answer this question.  Final answer: Insufficient information
+baseline,UID0242,easy,1,0.333,1.0,0,0,8,"# Solution  ## Step 1: Set Up Portfolio Volatility Formula  For an equal-weighted (50/50) portfolio of two assets, the portfolio standard deviation is:  $$\sigma_p = \sqrt{w_1^2\sigma_1^2 + w_2^2\sigma_2^2 + 2w_1w_2\rho\sigma_1\sigma_2}$$  With w₁ = w₂ = 0.5 and ρ = 0.72 for both years.  ## Step 2: "
+engineered,UID0008,easy,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0009,hard,1,1.0,1.0,0,0,0,
+engineered,UID0010,hard,1,0.25,1.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0019,hard,1,0.333,1.0,0,0,0,
+engineered,UID0036,hard,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0042,hard,1,1.0,1.0,0,14,15,"Based on the excerpts provided, only a partial list of states' unemployment insurance tax data is given (Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, North Carolina, North Dakota, Ohio, and Oklahoma). Data for all 50 U.S. states is required to compute a Zipf expon"
+engineered,UID0054,easy,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0066,easy,1,0.333,1.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0068,hard,1,0.25,0.5,0,7,7,"Looking at the ""Rents and royalties on the Outer Continental Shelf (33)"" column across the excerpts:  - October (monthly): 12 - Fiscal year 2016 to date (cumulative): -1149  Comparing absolute values: |12| = 12, and |-1149| = 1149. The lowest absolute value recorded is 12 (from the October monthly f"
+engineered,UID0072,easy,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0077,hard,1,1.0,1.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0078,easy,1,0.25,0.333,0,0,0,Not found  Final answer: Not found
+engineered,UID0079,easy,1,1.0,0.2,0,0,0,Not found  Final answer: Not found
+engineered,UID0081,easy,0,0.0,0.0,0,3,4,"Looking at the FD-2/FD-1 data for CY 2022 year-end (from treasury_bulletin_2022_12.txt):  - Total outstanding (Treasury securities): $30,928,912 million - Nonmarketable securities held by U.S. Government accounts: $6,608,706 million (with ""-"" for marketable holdings by government accounts, indicatin"
+engineered,UID0082,easy,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0085,hard,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0086,hard,1,0.2,1.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0087,easy,1,0.25,1.0,1,3,3,"Based on the Fourth-Quarter Net Budget Receipts by Source table in treasury_bulletin_2013_12.txt, the Individual income taxes for September (the third month listed: July, Aug., Sept.) is 140.9 billion dollars.  Source: treasury_bulletin_2013_12.txt  Final answer: 140.9"
+engineered,UID0088,easy,0,0.0,0.0,0,6,6,"Based on the excerpts provided, I only have NASA total fiscal-year outlay figures for FY2014 (17,093) and FY2017 (18,698), along with a 2018 estimate and scattered monthly figures. There is no data for FY2008, FY2009, FY2010, FY2011, FY2012, FY2013, FY2015, or FY2016 NASA outlays, which are required"
+engineered,UID0089,easy,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0098,easy,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0099,easy,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0100,hard,0,0.0,0.0,0,0,0,"Not found  Final answer: [Not found, Not found, Not found]"
+engineered,UID0101,hard,1,0.2,0.5,0,0,0,Not found  Final answer: Not found
+engineered,UID0102,hard,1,1.0,0.5,0,5,6,"## Step 1: Identify the Relevant Data  The excerpt titled ""Second-Quarter Net Budget Receipts by Source, Fiscal Year 2021"" provides monthly nominal net budget receipts (not cumulative) for **Corporate income taxes** across the three months of the fiscal quarter:  | Month 1 | Month 2 | Month 3 | |---"
+engineered,UID0108,hard,1,0.5,1.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0109,hard,1,0.2,0.5,0,4,5,"Based on the excerpts provided, I cannot identify a complete, consistent time series of total nominal on-budget and off-budget outlays for the Department of Defense for each fiscal year from FY2011 through FY2020. Only one clear full-year figure appears (FY2020 year-to-date DoD-military outlays of 5"
+engineered,UID0110,hard,0,0.0,0.0,0,0,0,
+engineered,UID0111,hard,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0125,easy,1,1.0,0.333,0,0,0,
+engineered,UID0155,hard,1,0.2,0.25,0,6,6,"Based on the excerpts provided, I can only locate July reserve asset data for one year (July 2013: Total 147427, Gold stock 11041, SDR 54214, Foreign currencies 47688, Reserve position in IMF 34483 — from treasury_bulletin_2013_09.txt and treasury_bulletin_2013_12.txt). There is no July data provide"
+engineered,UID0162,easy,1,0.2,0.333,0,0,0,Not found  Final answer: Not found
+engineered,UID0165,hard,1,1.0,1.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0178,easy,0,0.0,0.0,0,0,0,
+engineered,UID0180,hard,0,0.0,0.0,0,3,3,"Based on the excerpts provided, only fiscal year 2009 data is available (Government accounts > Public debt securities = 4,355,291 million). No data for fiscal years 2005, 2006, 2007, or 2008 is present in any of the excerpts, so the required sum cannot be computed.  Source_file(s): treasury_bulletin"
+engineered,UID0182,hard,0,0.0,0.0,0,0,0,
+engineered,UID0204,hard,0,0.0,0.0,0,5,5,"# Analysis  **Step 1: Find the actual FY 2010 federal budget deficit**  From treasury_bulletin_2011_09.txt: > ""The federal budget deficit narrowed to $1.3 trillion (8.9 percent of GDP) in fiscal year 2010, from $1.4 trillion in fiscal year 2009 (10.0 percent of GDP).""  This confirms: **Actual FY 201"
+engineered,UID0206,easy,1,0.5,1.0,0,0,0,
+engineered,UID0219,hard,0,0.0,0.0,0,0,0,Not found  Final answer: Not found
+engineered,UID0242,easy,1,1.0,1.0,0,0,0,
