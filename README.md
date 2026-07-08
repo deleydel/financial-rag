@@ -17,7 +17,7 @@ retriever and the generator.
 | Factual Accuracy | 0.0% | **2.5%** |
 | Hallucination Rate | 28.1% | **6.7%** |
 
-See [DISCUSSION_POST.md](DISCUSSION_POST.md) for the full write-up and reflections.
+
 
 ## Architecture
 
